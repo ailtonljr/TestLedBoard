@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do AndGate_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Users/admg5/Documents/FPGA/AndGate {D:/Users/admg5/Documents/FPGA/AndGate/AndGate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:36:20 on Oct 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/admg5/Documents/FPGA/AndGate" D:/Users/admg5/Documents/FPGA/AndGate/AndGate.v 
+# -- Compiling module AndGate
+# 
+# Top level modules:
+# 	AndGate
+# End time: 20:36:20 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.AndGate
+# vsim work.AndGate 
+# Start time: 20:36:26 on Oct 25,2021
+# Loading work.AndGate
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/AndGate/a
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/AndGate/b
+wave create -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/AndGate/c
+run
+add wave -position end  sim:/AndGate/q
+run
+quit -sim
+wave editwrite -file D:/Users/admg5/Documents/FPGA/AndGate/simulation/modelsim/wave.do
+# End time: 20:37:57 on Oct 25,2021, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+vsim work.AndGate
+# vsim work.AndGate 
+# Start time: 20:38:18 on Oct 25,2021
+# Loading work.AndGate
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/AndGate/c
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/AndGate/b
+wave create -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/AndGate/a
+add wave -position end  sim:/AndGate/q
+run
+# End time: 20:40:23 on Oct 25,2021, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 0
+wave editwrite -file D:/Users/admg5/Documents/FPGA/AndGate/simulation/modelsim/wave.do

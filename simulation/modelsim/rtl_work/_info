@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/admg5/Documents/FPGA/AndGate/simulation/modelsim
+vAndGate
+!s110 1635204980
+!i10b 1
+!s100 []1aV5b^Z@7F0zCfe[;@<2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IO8D2o0;`E71G7T4j7ScR90
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635203158
+8D:/Users/admg5/Documents/FPGA/AndGate/AndGate.v
+FD:/Users/admg5/Documents/FPGA/AndGate/AndGate.v
+!i122 0
+L0 5 10
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1635204980.000000
+!s107 D:/Users/admg5/Documents/FPGA/AndGate/AndGate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/admg5/Documents/FPGA/AndGate|D:/Users/admg5/Documents/FPGA/AndGate/AndGate.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Users/admg5/Documents/FPGA/AndGate
+tCvgOpt 0
+n@and@gate
